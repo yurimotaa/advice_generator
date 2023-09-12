@@ -1,14 +1,11 @@
-import { useContext } from "react";
-import { AdvicesContext } from "../../contexts/advicesContext";
+import Card from "../../components/card";
+import StyledMain from "./style";
 
 const MainPage = () => {
-  const { advice, getRandomAdvice } = useContext(AdvicesContext);
-
   return (
-    <div>
-      {advice ? <p>{advice.advice}</p> : <p>Clique para gerar um conselho</p>}
-      <button onClick={() => getRandomAdvice()}>Clique</button>
-    </div>
+    <StyledMain>
+      <Card />
+    </StyledMain>
   );
 };
 
