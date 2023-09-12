@@ -5,9 +5,9 @@ const StyledMain = styled.main`
   justify-content: center;
   align-items: center;
 
-  height: 750px;
+  height: 100vh;
 
-  background-color: var(--dark-grayish-blue);
+  background-color: var(--dark-blue);
 `;
 
 export default StyledMain;
